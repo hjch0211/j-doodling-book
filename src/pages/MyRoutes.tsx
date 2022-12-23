@@ -3,7 +3,7 @@ import Main from "./Main";
 import Three from "./Three";
 import Fail from "./Fail";
 
-export const Routes = () => {
+export const MyRoutes = () => {
   return (
     <ReactRoutes>
       <Route path="/" element={<Main />} />

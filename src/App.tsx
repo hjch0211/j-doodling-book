@@ -1,17 +1,11 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { MyRoutes } from "./pages/MyRoutes";
 
-// Pages
-import Main from "./pages/Main";
-import Three from "./pages/Three";
-
+// [!] Provider는 여기에 위치시키려 함
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/three" element={<Three />} />
-      </Routes>
+      <MyRoutes />
     </Router>
   );
 }
