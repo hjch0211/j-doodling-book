@@ -1,6 +1,10 @@
 {
   "name": "j-doodling-book",
   "version": "0.1.0",
+  "description": "연습용 공책",
+  "repository": "https://github.com/hjch0211/j-doodling-book.git",
+  "author": "Jchan <gkswocks123@gmail.com>",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.47.1",
@@ -48,3 +52,4 @@
     "@types/three": "^0.146.0"
   }
 }
+
