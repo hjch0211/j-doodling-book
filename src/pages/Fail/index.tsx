@@ -1,7 +1,7 @@
 import React from "react";
 
-function Main() {
+function Fail() {
   return <></>;
 }
 
-export default Main;
+export default Fail;
