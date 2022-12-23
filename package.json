@@ -7,6 +7,8 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@react-three/drei": "^9.47.1",
     "@react-three/fiber": "^8.9.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -52,4 +54,3 @@
     "@types/three": "^0.146.0"
   }
 }
-
