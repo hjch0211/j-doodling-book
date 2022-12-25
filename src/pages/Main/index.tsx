@@ -8,7 +8,7 @@ function Main() {
   return (
     <>
       <Empty height="5rem" />
-      <button>Main</button>
+      <button onClick={() => navigate("/design-system")}>Go to design-system</button>
       <div>Main</div>
     </>
   );

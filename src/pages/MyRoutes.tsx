@@ -9,7 +9,7 @@ export const MyRoutes = () => {
     <ReactRoutes>
       <Route path="/" element={<Main />} />
       <Route path="/three" element={<Three />} />
-      <Route path="/design_system" element={<DesignSystem />} />
+      <Route path="/design-system" element={<DesignSystem />} />
       <Route path="*" element={<Fail />} />
     </ReactRoutes>
   );
