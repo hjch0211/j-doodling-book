@@ -1,15 +1,12 @@
 import styled from "@emotion/styled";
 
 type Props = {
-  height: number;
-  type?: "rem" | "px";
+  height: `${number}px` | `${number}rem`;
 };
 
-// [?] styled를 굳이 쓰는 느낌일까?
 /**
- * @param height number
- * @param type "rem" | "px"
+ * @param height
  */
 export const Empty = styled.div<Props>((props) => ({
-  height: `${props.height}${props.type ?? "px"}`,
+  height: `${props.height}`,
 }));
