@@ -1,11 +1,36 @@
 import { BrowserRouter as Router } from "react-router-dom";
+import { Global as DefaultCssSetting, css } from "@emotion/react";
 import { MyRoutes } from "./pages/MyRoutes";
+import { PageLayout } from "./pages/PageLayout";
 
 // [!] Provider는 여기에 위치시키려 함
 function App() {
   return (
     <Router>
-      <MyRoutes />
+      <DefaultCssSetting
+        styles={css`
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            font-size: 1rem;
+            font-weight: normal;
+            margin: 0;
+          }
+          html,
+          body,
+          #root {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+          }
+        `}
+      />
+      <PageLayout>
+        <MyRoutes />
+      </PageLayout>
     </Router>
   );
 }
