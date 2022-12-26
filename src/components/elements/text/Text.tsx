@@ -27,7 +27,8 @@ export const Text = (props: TextProps) => {
     <Component
       css={css({
         fontWeight: "lighter",
-        fontSize: "0.8rem",
+        fontSize: "0.9rem",
+        letterSpacing: "1px",
       })}
     >
       {children}

@@ -12,4 +12,5 @@ export const H2 = styled.h2({
 
 export const H3 = styled.h3({
   fontSize: "1rem",
+  letterSpacing: "1px",
 });
