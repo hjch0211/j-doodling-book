@@ -2,7 +2,7 @@
 import { css as cssEmotion, Interpolation, Theme } from "@emotion/react";
 import { color } from "../../contants/colors";
 
-interface RangeInputProps {
+export interface RangeInputProps {
   step: number;
   min: number;
   max: number;

@@ -1,9 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
-import { Text, Empty, H1, H2, H3 } from "../../components/elements";
-// import { InputRange } from "../../components/";
-import { styledEmotionDiary } from "./styled";
-import { RangeInput } from "../../components/elements/input/Range";
+import { Text, Empty, H1, H2 } from "../../components/elements";
+import { styledEmotionDiary } from "./component";
 
 function EmotionDiary() {
   const { Layout } = styledEmotionDiary;
@@ -16,8 +14,6 @@ function EmotionDiary() {
       <Empty height="1rem" />
       <Text>자신의 감정을 매일 기록해 보아요.</Text>
       <Empty height="1rem" />
-      {/* <InputRange labelName="sss" step={1} min={0} max={5} /> */}
-      <RangeInput step={1} min={0} max={5} />
     </Layout>
   );
 }
