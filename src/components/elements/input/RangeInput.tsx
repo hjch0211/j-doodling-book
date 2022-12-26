@@ -27,8 +27,8 @@ const cssRangeInput = cssEmotion({
 
   "::-webkit-slider-thumb": {
     WebkitAppearance: "none",
-    width: "2rem",
-    height: "2rem",
+    width: "1.5rem",
+    height: "1.5rem",
     backgroundColor: color.white,
     borderRadius: "20px",
   },

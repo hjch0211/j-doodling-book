@@ -2,6 +2,7 @@ import React from "react";
 import { Text, Empty, H1, H2 } from "../../components/elements";
 import { styledEmotionDiary } from "./component";
 
+// [Todo] 모바일에 맞춰서 개발해야 됨
 function EmotionDiary() {
   const { Layout, EDRange } = styledEmotionDiary;
   return (
