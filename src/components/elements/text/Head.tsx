@@ -7,10 +7,11 @@ export const H1 = styled.h1({
 
 export const H2 = styled.h2({
   fontSize: "2rem",
-  fontWeight: "normal",
+  fontWeight: "bold",
+  letterSpacing: "1px",
 });
 
 export const H3 = styled.h3({
-  fontSize: "1rem",
+  fontSize: "1.5rem",
   letterSpacing: "1px",
 });
