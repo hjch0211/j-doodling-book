@@ -21,7 +21,7 @@ const cssRangeInput = cssEmotion({
   WebkitAppearance: "none",
   width: "50%",
   maxWidth: "20rem",
-  height: "1rem",
+  height: "0.2rem",
 
   backgroundColor: color.grey1,
 
