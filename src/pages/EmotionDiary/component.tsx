@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 import { Text } from "../../components/elements";
 import { RangeInput, RangeInputProps } from "../../components/elements";
@@ -20,15 +18,6 @@ const EDRange = (props: InputRangeProps) => {
   );
 };
 
-// [Todo] common Layout으로 빼도 좋을 듯
-const Layout = styled.div({
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  width: "100%",
-});
-
 export const styledEmotionDiary = {
-  Layout,
   EDRange,
 };
