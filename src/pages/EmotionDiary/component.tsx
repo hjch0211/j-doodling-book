@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { Text } from "../../components/elements";
 import { RangeInput, RangeInputProps } from "../../components/elements";
