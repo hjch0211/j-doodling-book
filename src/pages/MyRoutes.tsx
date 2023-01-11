@@ -4,6 +4,7 @@ import Three from "./Three";
 import Fail from "./Fail";
 import DesignSystem from "./DesignSystem";
 import EmotionDiary from "./EmotionDiary";
+import IdeaContest from "./IdeaContest";
 
 export const MyRoutes = () => {
   return (
@@ -12,6 +13,7 @@ export const MyRoutes = () => {
       <Route path="/three" element={<Three />} />
       <Route path="/design-system" element={<DesignSystem />} />
       <Route path="/emotion-diary" element={<EmotionDiary />} />
+      <Route path="/idea-contest" element={<IdeaContest />} />
       <Route path="*" element={<Fail />} />
     </ReactRoutes>
   );
