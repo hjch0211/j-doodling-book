@@ -4,6 +4,7 @@ import { MyRoutes } from "./pages/MyRoutes";
 import { PageLayout } from "./pages/PageLayout";
 
 // [!] Provider는 여기에 위치시키려 함
+// 프로바이더가 많아진다면, 프로바이더 폴더를 따로 만들어보기
 function App() {
   return (
     <Router>
