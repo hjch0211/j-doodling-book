@@ -1,6 +1,7 @@
 # j-doodling-book
 
 FE Jchan's doodling book
+생각나는 아이디어, 연습하고 싶은 툴을 적용해보는 레포
 
 ## using...
 
@@ -11,4 +12,4 @@ FE Jchan's doodling book
 
 ## Backlog
 
-[Todo] MD 꾸미는 것도 알아보기
+모노레포 + yarn berry로 이전?
