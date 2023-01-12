@@ -9,12 +9,14 @@ let theme = createTheme({
     },
     body1: {
       fontWeight: 500,
+      letterSpacing: "2px",
     },
-    button: {
-      fontStyle: "italic",
-    },
+    button: {},
   },
   palette: {
+    primary: {
+      main: "#D9D9D9",
+    },
     neutral: {
       main: "#64748B",
       contrastText: "#fff",
