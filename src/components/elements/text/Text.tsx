@@ -1,4 +1,7 @@
+/** @jsxImportSource @emotion/react */
+// [?] 근데 저거 일일 써줘야 하나?
 import React from "react";
+import { css } from "@emotion/react";
 
 // [Todo]
 // 폰트 크기 특정
@@ -12,12 +15,23 @@ import React from "react";
 
 // [Todo] <T> 이거 어떤 원리인지 헷갈림
 // [Todo] JSX.IntrinsicElements = "span" ...?
+
 interface TextProps<Element extends keyof JSX.IntrinsicElements = "span" | "div"> {
   as?: Element;
   children: React.ReactNode;
 }
 
 export const Text = (props: TextProps) => {
-  const { as: Component = "div", children } = props;
-  return <Component>{children}</Component>;
+  const { as: Component = "span", children } = props;
+  return (
+    <Component
+      css={css({
+        fontWeight: "lighter",
+        fontSize: "0.9rem",
+        letterSpacing: "1px",
+      })}
+    >
+      {children}
+    </Component>
+  );
 };
