@@ -1,1 +1,1 @@
-export {};
+export { MuiThemeProvider } from "./muiThemeProvider";

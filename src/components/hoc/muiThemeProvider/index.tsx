@@ -34,8 +34,6 @@ declare module "@mui/material/Button" {
   }
 }
 
-const MuiThemeProvider = ({ children }: { children: React.ReactNode }) => (
+export const MuiThemeProvider = ({ children }: { children: React.ReactNode }) => (
   <ThemeProvider theme={theme}>{children}</ThemeProvider>
 );
-
-export default MuiThemeProvider;

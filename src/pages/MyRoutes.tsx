@@ -1,5 +1,5 @@
 import { Route, Routes as ReactRoutes } from "react-router-dom";
-import Main from "./Main";
+import { Main } from "./Main";
 import Three from "./Three";
 import Fail from "./Fail";
 import IdeaContest from "./IdeaContest";
