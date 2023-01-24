@@ -7,9 +7,10 @@ FE Jchan's doodling book
 
 - React for render
 - TS for statically testing type
-- emotion for css-in-js
+- MUI for Design System
 - three.js for great UX
 
 ## Backlog
 
-모노레포 + yarn berry로 이전?
+MUI에 너무 의존적이게 되지 않을까..?
+-> 낙서용이니까 여기서는 그런 고민하지 말자
