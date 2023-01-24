@@ -7,7 +7,7 @@ FE Jchan's doodling book
 
 - React for render
 - TS for statically testing type
-- emotion for css-in-js
+- MUI for Design System
 - three.js for great UX
 
 ## Backlog
