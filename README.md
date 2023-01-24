@@ -11,5 +11,3 @@ FE Jchan's doodling book
 - three.js for great UX
 
 ## Backlog
-
-모노레포 + yarn berry로 이전?
