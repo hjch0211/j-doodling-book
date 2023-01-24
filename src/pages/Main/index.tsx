@@ -5,12 +5,15 @@ import { Empty } from "../../components/atom";
 
 export const Main = () => {
   const navigate = useNavigate();
+  // [Todo] 화면에서 어떻게 보여줄까
   return (
     <>
       <Empty height="5rem" />
       <Typography variant="h1">Main</Typography>
       <Empty height="5rem" />
       <button onClick={() => navigate("/idea-contest")}>idea-contest</button>
+      <Empty height="5rem" />
+      <button onClick={() => navigate("/versatile-form")}>versatile-form</button>
     </>
   );
 };
