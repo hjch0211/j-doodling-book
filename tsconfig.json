@@ -17,5 +17,5 @@
     "jsxImportSource": "@emotion/react",
     "jsx": "react-jsx"
   },
-  "include": ["src"]
+  "include": ["src", "legacy/RangeInput.tsx"]
 }
