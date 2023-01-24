@@ -1,46 +1,15 @@
 import React from "react";
 import { ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material/styles";
-
-const DEFAULT_BOX_MODEL = { margin: 0, padding: 0 };
-const FULL_SIZE = { height: "100%", width: "100%" };
+import { configMuiTypography } from "./configMuiTypography";
+import { configMuiPalette } from "./configMuiPalette";
+import { configMuiBreakpoints } from "./configMuiBreakpoints";
+import { configMuiComponents } from "./configMuiComponents";
 
 let theme = createTheme({
-  typography: {
-    subtitle1: {
-      fontSize: 12,
-    },
-    body1: {
-      fontWeight: 500,
-      letterSpacing: "2px",
-    },
-    button: {},
-  },
-  palette: {
-    primary: {
-      main: "#D9D9D9",
-    },
-    neutral: {
-      main: "#64748B",
-      contrastText: "#fff",
-    },
-  },
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 600,
-      md: 900,
-      lg: 1200,
-      xl: 1536,
-    },
-  },
-  components: {
-    MuiCssBaseline: {
-      styleOverrides: {
-        "*": { ...DEFAULT_BOX_MODEL },
-        "html, body": { ...FULL_SIZE },
-      },
-    },
-  },
+  typography: { ...configMuiTypography },
+  palette: { ...configMuiPalette },
+  breakpoints: { ...configMuiBreakpoints },
+  components: { ...configMuiComponents },
 });
 
 // 타이포그래피를 반응형으로 만듦
