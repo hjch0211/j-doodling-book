@@ -7,7 +7,7 @@ function IdeaContest() {
     <>
       <Empty height="3rem" />
       <Typography variant="h2" color="primary">
-        Innovators
+        Inno
       </Typography>
       <Empty height="3rem" />
       <Typography color="primary">과거의 산물을 해결해보고</Typography>
