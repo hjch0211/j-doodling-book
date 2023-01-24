@@ -1,7 +1,9 @@
 import React from "react";
 import { ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material/styles";
 
-// TS에서는 커스텀 프로퍼티를 추가하려면 declation 필요
+const DEFAULT_BOX_MODEL = { margin: 0, padding: 0 };
+const FULL_SIZE = { height: "100%", width: "100%" };
+
 let theme = createTheme({
   typography: {
     subtitle1: {
@@ -31,12 +33,20 @@ let theme = createTheme({
       xl: 1536,
     },
   },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        "*": { ...DEFAULT_BOX_MODEL },
+        "html, body": { ...FULL_SIZE },
+      },
+    },
+  },
 });
 
-// 간단하게 타이포그래피 반응형으로 만들 수 있는 듯
+// 타이포그래피를 반응형으로 만듦
 theme = responsiveFontSizes(theme);
 
-// 너무 귀찮아질 듯?
+// TS에서는 "커스텀 프로퍼티"를 추가하려면 declation 필요
 declare module "@mui/material/styles" {
   interface Palette {
     neutral: Palette["primary"];

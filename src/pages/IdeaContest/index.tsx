@@ -1,6 +1,5 @@
 import React from "react";
 import MuiThemeProvider from "./MuiThemeProvider";
-import { CommonLayout } from "../../components/CommonLayout";
 import { Button, Typography } from "@mui/material";
 import { Empty } from "../../components/atom";
 
