@@ -11,3 +11,6 @@ FE Jchan's doodling book
 - three.js for great UX
 
 ## Backlog
+
+MUI에 너무 의존적이게 되지 않을까..?
+-> 낙서용이니까 여기서는 그런 고민하지 말자
