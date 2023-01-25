@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { Empty } from "../../components/atom";
 
@@ -12,9 +12,13 @@ export const Main = () => {
       <Empty height="5rem" />
       <Typography variant="h1">Main</Typography>
       <Empty height="5rem" />
-      <button onClick={() => navigate("/idea-contest")}>idea-contest</button>
+      <Button onClick={() => navigate("/idea-contest")} variant="outlined">
+        idea-contest
+      </Button>
       <Empty height="5rem" />
-      <button onClick={() => navigate("/versatile-form")}>versatile-form</button>
+      <Button onClick={() => navigate("/versatile-form")} variant="outlined">
+        versatile-form
+      </Button>
     </>
   );
 };
