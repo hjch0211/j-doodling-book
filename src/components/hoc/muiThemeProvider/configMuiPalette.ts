@@ -8,6 +8,7 @@ import { color } from "../../constants/colors";
  */
 
 export const configMuiPalette: PaletteOptions = {
+  mode: "dark",
   primary: {
     main: color.turquoise,
   },
