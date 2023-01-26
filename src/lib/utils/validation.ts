@@ -5,26 +5,25 @@ const email = RFC5322;
 const engAndNum = /(?=.*[A-Za-z])(?=.*\d)/;
 const specialCharacters = /(?=.*[$@$!%*#?&])/;
 
-type Validations = { (value: string): boolean };
-type CriterionValidations = { (value: string, criterion: number): boolean };
+export type Validations = { (value: string, criterion?: number): boolean };
 
 export const isRequired: Validations = (value) => {
   return value.length > 0;
 };
 
-export const isMin: CriterionValidations = (value, criterion) => {
+export const isMin: Validations = (value, criterion = NaN) => {
   return Number(value) >= criterion;
 };
 
-export const isMax: CriterionValidations = (value, criterion) => {
+export const isMax: Validations = (value, criterion = NaN) => {
   return Number(value) <= criterion;
 };
 
-export const isMinLength: CriterionValidations = (value, criterion) => {
+export const isMinLength: Validations = (value, criterion = NaN) => {
   return value.length >= criterion;
 };
 
-export const isMaxLength: CriterionValidations = (value, criterion) => {
+export const isMaxLength: Validations = (value, criterion = NaN) => {
   return value.length <= criterion;
 };
 
