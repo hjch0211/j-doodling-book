@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, InputAdornment, IconButton } from "@mui/material";
 import { useFormLogin } from "./hook";
-import { InputControlled } from "../../../../components/atom/InputControlled";
+import { InputControlled as Input } from "../../../../components/atom/InputControlled";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import { Empty } from "../../../../components/atom";
 
@@ -31,10 +31,10 @@ export const FormLogin = () => {
         }}
         onSubmit={onSubmit}
       >
-        <InputControlled
+        <Input
           label="ID"
           type="email"
-          {...reg.email}
+          useControllerProps={reg.email}
           fullWidth
           InputProps={{
             endAdornment: (
@@ -51,7 +51,7 @@ export const FormLogin = () => {
           }}
         />
         <Empty height="3rem" />
-        <InputControlled label="PASSWORD" type="password" fullWidth />
+        <Input useControllerProps={reg.password} label="PASSWORD" type="password" fullWidth />
         <Empty height="3rem" />
         <Button variant="contained" style={{ width: "30%" }}>
           Sign
