@@ -5,9 +5,7 @@ const ID = "id";
 const PW = "password";
 
 export const useFormLogin = () => {
-  const { control, handleSubmit, formState } = useForm({
-    defaultValues: { [ID]: "", [PW]: "" },
-  });
+  const { control, handleSubmit, formState } = useForm();
 
   // [Todo] reg 작업을 클래스로 빼보자
   const reg = {
