@@ -5,7 +5,7 @@ const ID = "id";
 const PW = "password";
 
 export const useFormLogin = () => {
-  const { control, handleSubmit, formState } = useForm();
+  const { control, handleSubmit } = useForm();
 
   // [Todo] reg 작업을 클래스로 빼보자
   const reg = {
@@ -15,6 +15,7 @@ export const useFormLogin = () => {
       rules: {
         validate: { isEmail: (val: string) => isEmail(val) || "이메일 형식이 올바르지 않습니다." },
       },
+      defaultValue: "",
     },
     password: {
       control,
@@ -22,6 +23,7 @@ export const useFormLogin = () => {
       rules: {
         validate: { isRequired: (val: string) => isRequired(val) || "비밀번호를 입력해야 합니다." },
       },
+      defaultValue: "",
     },
   };
 

@@ -15,7 +15,6 @@ export const FormLogin = () => {
   // [Todo] 유효성 검사 로직 만들기
   // [Todo] input에 clear 버튼 달기
   // [Todo] password 보기 버튼 달기
-  // [Error] 제출이 안 먹음 -> 리액트 훅 폼 controler 사용?
   // https://velog.io/@syoo970/react-hook-form%EA%B3%BC-MUI%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EC%9E%AC%EC%82%AC%EC%9A%A9%EC%84%B1-%EC%9E%88%EB%8A%94-Input-%EA%B3%B5%ED%86%B5-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0TypeScript
 
   return (
