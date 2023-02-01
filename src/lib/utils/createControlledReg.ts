@@ -17,13 +17,17 @@ type CreateReg<
       RegisterOptions<TFieldValues, TName>,
       "valueAsNumber" | "valueAsDate" | "setValueAs" | "disabled"
     >,
-    shouldUnregister?: boolean,
-    defaultValue?: FieldPathValue<TFieldValues, TName>
+    defaultValue?: FieldPathValue<TFieldValues, TName>,
+    shouldUnregister?: boolean
   ): UseControllerProps;
 };
 
+/**
+ * @required 인자 순서 보장 필요
+ * @회고 이 방법이 좋은가
+ */
 export const createControlledReg = (control: Control) => {
-  const createReg: CreateReg = (name, rules, shouldUnregister, defaultValue) => {
+  const createReg: CreateReg = (name, rules, defaultValue = "", shouldUnregister) => {
     return {
       control,
       name,
