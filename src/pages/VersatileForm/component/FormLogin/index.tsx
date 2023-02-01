@@ -1,6 +1,7 @@
 import React from "react";
-import { TextField, Button, InputAdornment, IconButton } from "@mui/material";
+import { Button, InputAdornment, IconButton } from "@mui/material";
 import { useFormLogin } from "./hook";
+import { InputControlled } from "../../../../components/atom/InputControlled";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import { Empty } from "../../../../components/atom";
 
@@ -30,7 +31,7 @@ export const FormLogin = () => {
         }}
         onSubmit={onSubmit}
       >
-        <TextField
+        <InputControlled
           label="ID"
           type="email"
           {...reg.email}
@@ -50,7 +51,7 @@ export const FormLogin = () => {
           }}
         />
         <Empty height="3rem" />
-        <TextField label="PASSWORD" type="password" fullWidth />
+        <InputControlled label="PASSWORD" type="password" fullWidth />
         <Empty height="3rem" />
         <Button variant="contained" style={{ width: "30%" }}>
           Sign

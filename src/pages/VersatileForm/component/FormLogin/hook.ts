@@ -5,21 +5,25 @@ const ID = "id";
 const PW = "password";
 
 export const useFormLogin = () => {
-  const { register, handleSubmit, formState } = useForm({
+  const { control, handleSubmit, formState } = useForm({
     defaultValues: { id: "", password: "" },
   });
 
-  // [Todo] reg 작업을 함수로 빼보자
+  // [Todo] reg 작업을 클래스로 빼보자
   const reg = {
     email: {
-      ...register(ID, {
-        validate: { isEmail: (val) => isEmail(val) || "이메일 형식이 올바르지 않습니다." },
-      }),
+      control,
+      name: ID,
+      rules: {
+        validate: { isEmail: (val: string) => isEmail(val) || "이메일 형식이 올바르지 않습니다." },
+      },
     },
     password: {
-      ...register(PW, {
-        validate: { isRequired: (val) => isRequired(val) || "비밀번호를 입력해야 합니다." },
-      }),
+      control,
+      name: PW,
+      rules: {
+        validate: { isRequired: (val: string) => isRequired(val) || "비밀번호를 입력해야 합니다." },
+      },
     },
   };
 
