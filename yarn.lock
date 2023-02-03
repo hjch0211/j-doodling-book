@@ -1702,6 +1702,13 @@
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.11.4.tgz#def5937e21443b197fd1998fd66721bd9c49a1bb"
   integrity sha512-jWVwGM3vG4O0sXcW0VcIl+njCWbGCBF5vvjRpuKJajrz51AD7D6+fP1SkInZXVk5pRHf6Bnk/Yj9Of9gXxb/hA==
 
+"@mui/icons-material@^5.11.0":
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.11.0.tgz#9ea6949278b2266d2683866069cd43009eaf6464"
+  integrity sha512-I2LaOKqO8a0xcLGtIozC9xoXjZAto5G5gh0FYUMAlbsIHNHIjn4Xrw9rvjY20vZonyiGrZNMAlAXYkY6JvhF6A==
+  dependencies:
+    "@babel/runtime" "^7.20.6"
+
 "@mui/material@^5.11.4":
   version "5.11.4"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.11.4.tgz#4dda0f993c9aa9678e1b9bce16adfe11e984dbd4"
@@ -7971,6 +7978,11 @@ react-error-overlay@^6.0.11:
   version "6.0.11"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
+
+react-hook-form@^7.42.1:
+  version "7.42.1"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.42.1.tgz#c6396ca684716d89abc1c7e64343badfd30c56c6"
+  integrity sha512-2UIGqwMZksd5HS55crTT1ATLTr0rAI4jS7yVuqTaoRVDhY2Qc4IyjskCmpnmdYqUNOYFy04vW253tb2JRVh+IQ==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
