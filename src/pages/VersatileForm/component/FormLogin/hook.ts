@@ -6,8 +6,9 @@ const ID = "id";
 const PW = "password";
 
 export const useFormLogin = () => {
-  const { control, handleSubmit } = useForm();
+  const { control, handleSubmit, formState, setValue } = useForm();
   const createReg = createControlledReg(control);
+
   const reg = {
     email: createReg(ID, {
       validate: { isEmail: (val: string) => isEmail(val) || "이메일 형식이 올바르지 않습니다." },
@@ -20,10 +21,8 @@ export const useFormLogin = () => {
   const onSubmit = handleSubmit(async (data) => {
     // [Todo] MSW 작업해서 http request 보내기
     console.log(data);
+    console.log(formState.errors);
   });
 
-  // const vldErr = createVldErr(formState, [EMAIL, PW]); // 에러 처리를 위한 코드
-  const vldErr = {}; // 에러 처리를 위한 코드
-
-  return { reg, onSubmit, vldErr };
+  return { reg, onSubmit, setValue };
 };
